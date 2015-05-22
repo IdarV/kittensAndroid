@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">eksamen</string>
+    <string name="app_name">Kittens</string>
     <string name="helloworld">Hello World, MyActivity</string>
     <string name="clickmesenpai">CLICK ME PlZ SENPAI</string>
     <string name="animation">Animation</string>
