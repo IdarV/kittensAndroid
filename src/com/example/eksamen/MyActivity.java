@@ -17,21 +17,22 @@ import android.widget.Toast;
 import java.io.InputStream;
 
 public class MyActivity extends Activity {
-    private Context context;
-    private final String TAG = "Eksamen";
     private WebView webView;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
-        context = this;
-        webView = (WebView) findViewById(R.id.webviewActionView);
-        webView.loadUrl(getResources().getString(R.string.kittenURL));
+        initWebView();
         initMoarKittensButton();
     }
 
-    public void initMoarKittensButton(){
+    private void initWebView() {
+        webView = (WebView) findViewById(R.id.webviewActionView);
+        webView.loadUrl(getResources().getString(R.string.kittenURL));
+    }
+
+    private void initMoarKittensButton(){
         Button moarKittens = (Button) findViewById(R.id.moarkittensButton);
         moarKittens.setOnClickListener(new View.OnClickListener() {
             @Override
